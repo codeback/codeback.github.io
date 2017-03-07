@@ -2,7 +2,15 @@
 layout: default
 ---
 
-<div class="posts">
+# Hoppin Docs
+
+## Documentación de Hoppin
+
+![Hoppin]({{ site.baseurl }}/images/hoppin_bg.png)
+
+Información relevante para merchants y desarrolladores :fire:
+
+<!-- <div class="posts">
   {% for post in site.posts %}
     <article class="post">
 
@@ -15,4 +23,4 @@ layout: default
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article>
   {% endfor %}
-</div>
+</div> -->
