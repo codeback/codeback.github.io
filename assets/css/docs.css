@@ -51,7 +51,7 @@ body {
 .navbar .nav.pull-right a {
   margin-right: 40px;
   text-decoration: none;
-  color: #ccc;
+  color: #FFFFFF;
   font-size: 13px;
   font-family: 'ProximaNova-Bold';
   font-weight: normal;
@@ -92,7 +92,7 @@ body {
 }
 
 #menu li.nav-header {
-  color: #111;
+  color: #E3AC37;
   font-family: 'ProximaNova-Bold';
   font-weight: normal;
   letter-spacing: 2px;

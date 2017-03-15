@@ -8,9 +8,11 @@ title: Magento Integration
 
 En esta guía se describen los pasos para integrar tu tienda con **Hoppin**.
 
+
 #### Paso 1 : Subir el módulo Hoppin
 
 Sube el módulo al directorio raíz de tu  instalación de Magento y descomprimirlo. Este módulo creará un nuevo método de pago (llmado Hoppin) y hará que no se muestre en el *checkout* a los usuarios que compren de modo convencional en Hoppin.
+
 
 #### Paso 2 : Medida de precaución (Just in case)
 
@@ -19,6 +21,7 @@ Sube el módulo al directorio raíz de tu  instalación de Magento y descomprimi
 * Limpia la caché en *System -> Cache Management*
 
 Ahora, sal de la sesión de administrador de Magento y accede de nuevo.
+
 
 #### Paso 3 : Configurar el módulo
 

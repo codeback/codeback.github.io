@@ -6,9 +6,10 @@ layout: default
 
 ## Documentación de Hoppin
 
+:fire: :fire: Información relevante para merchants y desarrolladores :fire: :fire:
+
 ![Hoppin]({{ site.baseurl }}/images/hoppin_bg.png)
 
-Información relevante para merchants y desarrolladores :fire:
 
 <!-- <div class="posts">
   {% for post in site.posts %}
