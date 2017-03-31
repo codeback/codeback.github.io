@@ -37,6 +37,7 @@ Para poder usar la API Key, debemos darle los permisos adecuados. Desde la vista
 * carts: View (GET) y Add (POST)
 * countries: View (GET)
 * customers: View (GET). Modify (PUT) y Add (POST)
+* languages: View (GET)
 * orders: View (GET) y Add (POST)
 
 #### Paso 3 : Identificadores
