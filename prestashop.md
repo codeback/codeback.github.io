@@ -85,6 +85,6 @@ Una vez activado, asegúrate de ocultarlo en el *checkout* de los usuarios si no
 * Disable on tablets
 * Disable on computers
 
-![presta-ss-07]({{ site.baseurl }}/images/presta-ss-07.png)
+![presta-ss-09]({{ site.baseurl }}/images/presta-ss-09.png)
 
 
