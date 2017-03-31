@@ -21,7 +21,7 @@ Desde esa vista, pulsa el *botón +* para crearla:
 
 ![presta-ss-02]({{ site.baseurl }}/images/presta-ss-02.png)
 
-Ahora clicka en *'Generate'* para que se genere una nueva API Key
+Ahora pulsa en *'Generate'* para que se genere una nueva API Key
 
 ![presta-ss-03]({{ site.baseurl }}/images/presta-ss-03.png)
 
@@ -42,13 +42,13 @@ Para poder usar la API Key, debemos darle los permisos adecuados. Desde la vista
 
 #### Paso 3 : Identificadores
 
-Para poder crear los pedidos, necesitamos que nos facilites algunos indicadores de tu tienda. Apúntaloa para enviárnoslos por correo a info@swipeapp.es.
+Para poder crear los pedidos, necesitamos que nos facilites algunos identificadores de tu tienda. Apúntalos para enviárnoslos por correo a info@swipeapp.es.
 
 * CountryID (Código para España)
 
 Puedes encontrar este ID pulsando en el menú lateral en *Localización -> Países*
 
-Una vez lo tengas identificado, apúntalo el que corresponda a España.
+Una vez lo tengas identificado, apunta el valor de la columna ID del país España.
 
 ![presta-ss-05]({{ site.baseurl }}/images/presta-ss-05.png)
 
@@ -79,7 +79,7 @@ Si te dirijes a *Módulos y Servicios -> Pago*, podrás activarlo (si es que no 
 
 ![presta-ss-08]({{ site.baseurl }}/images/presta-ss-08.png)
 
-Una vez activado, asegúrate de ocultarlo en el *checkout* de los usuarios si no quieres que puedan escoger esta opción al comprar directamente en tu tienda. Para ello clicka en las siguientes tres opciones:
+Una vez activado, asegúrate de ocultarlo en el *checkout* de los usuarios si no quieres que puedan escoger esta opción al comprar directamente en tu tienda web. Para ello pulsa en las siguientes tres opciones:
 
 * Disable on mobiles
 * Disable on tablets
