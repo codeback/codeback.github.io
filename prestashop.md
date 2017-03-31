@@ -8,7 +8,6 @@ title: Prestashop Integration
 
 En esta guía se describen los pasos para integrar tu tienda con **Hoppin**.
 
-
 #### Paso 1 : Crear API Key
 
 Necesitamos acceso a tu sistema para leer los productos y poder generar automáticamente los pedidos. Por ello, se hace necesaria la creación de una API Key.
@@ -27,6 +26,8 @@ Ahora clicka en *'Generate'* para que se genere una nueva API Key
 
 Una vez la haya obtenido, *necesitamos que nos la envíes a info@swipeapp.es*
 
+
+
 #### Paso 2 : Crear permisos API Key
 
 Para poder usar la API Key, debemos darle los permisos adecuados. Desde la vista de edición de la API Key, selecciona los siguientes permisos
@@ -38,6 +39,8 @@ Para poder usar la API Key, debemos darle los permisos adecuados. Desde la vista
 * countries: View (GET)
 * customers: View (GET). Modify (PUT) y Add (POST)
 * orders: View (GET) y Add (POST)
+
+
 
 #### Paso 3 : Identificadores
 
@@ -68,6 +71,7 @@ De forma similar a los IDs anteriores, puedes encontrar este otro en *Transporte
 *NOTA*: Necesitamos que escojas aquí los gastos de envío para los pedidos que se hagana a través de Hoppin y que este sea un valor fijo.
 
 Al igual que antes, apunta el ID correspondiente a este método de envío.
+
 
 
 #### Paso 4 : Activar método de pago
