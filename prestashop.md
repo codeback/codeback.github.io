@@ -55,14 +55,17 @@ Para poder crear los pedidos, necesitamos que nos facilites el identificador del
 
 Puedes encontrarlo en *Transporte -> Transportistas*
 
-![presta-ss-07]({{ site.baseurl }}/images/presta-ss-07.png)
+![presta-ss-05]({{ site.baseurl }}/images/presta-ss-05.png)
 
 *NOTA*: Necesitamos que escojas aquí los gastos de envío para los pedidos que se hagana a través de Hoppin y que este sea un valor fijo.
 
 Apunta el ID correspondiente a este método de envío.  
 
-También debes enviarnos las reglas de envío que tengas configuradas.
+También debes enviarnos las reglas de envío que tengas configuradas en ese transportista.
 
+![presta-ss-06]({{ site.baseurl }}/images/presta-ss-06.png)  
+  
+  
 #### Paso 4 : Activar método de pago
 
 Por último, y ya que los pagos os los vamos a procesar nosotros, necesitamos usar un método de pago para reflejarlo en los pedidos. El más adecuado es el denominado *BankWire* (transferencia bancaria).
