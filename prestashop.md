@@ -34,8 +34,10 @@ Para poder usar la API Key, debemos darle los permisos adecuados. Desde la vista
 ![presta-ss-04]({{ site.baseurl }}/images/presta-ss-04.png)
 
 * addresses: View (GET) y Add (POST)
+* carriers: View (GET)
 * carts: View (GET) y Add (POST)
 * countries: View (GET)
+* currencies: View (GET)
 * customers: View (GET). Modify (PUT) y Add (POST)
 * languages: View (GET)
 * orders: View (GET) y Add (POST)
