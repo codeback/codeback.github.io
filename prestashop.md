@@ -49,7 +49,7 @@ Para poder usar la API Key, debemos darle los permisos adecuados. Desde la vista
 * **zones: View (GET).** Para calcular los gastos de envío de los pedidos.
 
 
-#### Paso 3 : Identificadores
+#### Paso 3 : Envíos
 
 Para poder crear los pedidos, necesitamos que nos facilites el identificador del transportista que debemos usar. Apúntalo para enviárnoslos por correo a info@swipeapp.es.
 
@@ -61,6 +61,7 @@ Puedes encontrarlo en *Transporte -> Transportistas*
 
 Apunta el ID correspondiente a este método de envío.  
 
+También debes enviarnos las reglas de envío que tengas configuradas.
 
 #### Paso 4 : Activar método de pago
 
