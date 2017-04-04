@@ -46,33 +46,15 @@ Para poder usar la API Key, debemos darle los permisos adecuados. Desde la vista
 
 #### Paso 3 : Identificadores
 
-Para poder crear los pedidos, necesitamos que nos facilites algunos identificadores de tu tienda. Apúntalos para enviárnoslos por correo a info@swipeapp.es.
+Para poder crear los pedidos, necesitamos que nos facilites el identificador del transportista que debemos usar. Apúntalo para enviárnoslos por correo a info@swipeapp.es.
 
-* CountryID (Código para España)
-
-Puedes encontrar este ID pulsando en el menú lateral en *Localización -> Países*
-
-Una vez lo tengas identificado, apunta el valor de la columna ID del país España.
-
-![presta-ss-05]({{ site.baseurl }}/images/presta-ss-05.png)
-
-* LangID
-
-Puedes encontrar este ID pulsando en el menú lateral en *Localización -> Idiomas*
-
-Una vez lo tengas identificado, apunta el que corresponda al idioma Español.
-
-![presta-ss-06]({{ site.baseurl }}/images/presta-ss-06.png)
-
-* CarrierID
-
-De forma similar a los IDs anteriores, puedes encontrar este otro en *Transporte -> Transportistas*
+Puedes encontrarlo en *Transporte -> Transportistas*
 
 ![presta-ss-07]({{ site.baseurl }}/images/presta-ss-07.png)
 
 *NOTA*: Necesitamos que escojas aquí los gastos de envío para los pedidos que se hagana a través de Hoppin y que este sea un valor fijo.
 
-Al igual que antes, apunta el ID correspondiente a este método de envío.  
+Apunta el ID correspondiente a este método de envío.  
 
 
 #### Paso 4 : Activar método de pago
