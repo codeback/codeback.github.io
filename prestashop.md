@@ -6,7 +6,7 @@ title: Prestashop Integration
 # Integración con tiendas Prestashop 1.6.x
 ### Compromiso Hoppin: ¡Integración en menos de 30 minutos! :alarm_clock:
 
-En esta guía se describen los pasos para integrar tu tienda con **Hoppin**.
+En esta guía se describen los pasos para integrar tu tienda con **Hoppin**.  
 
 
 #### Paso 1 : Crear API Key
@@ -25,7 +25,8 @@ Ahora pulsa en *'Generate'* para que se genere una nueva API Key
 
 ![presta-ss-03]({{ site.baseurl }}/images/presta-ss-03.png)
 
-Una vez la haya obtenido, *necesitamos que nos la envíes a info@swipeapp.es*
+Una vez la haya obtenido, *necesitamos que nos la envíes a info@swipeapp.es*  
+
 
 #### Paso 2 : Crear permisos API Key
 
@@ -40,7 +41,8 @@ Para poder usar la API Key, debemos darle los permisos adecuados. Desde la vista
 * **currencies: View (GET).** Para obtener el identificador de la moneda.
 * **customers: View (GET).** Modify (PUT) y Add (POST). Para crear el cliente en vuestro sistema.
 * **languages: View (GET).** Para obtener el identificador del idioma.
-* **orders: View (GET) y Add (POST).** Para crear los pedidos en vuestro sistema.
+* **orders: View (GET) y Add (POST).** Para crear los pedidos en vuestro sistema.  
+
 
 #### Paso 3 : Identificadores
 
@@ -70,7 +72,7 @@ De forma similar a los IDs anteriores, puedes encontrar este otro en *Transporte
 
 *NOTA*: Necesitamos que escojas aquí los gastos de envío para los pedidos que se hagana a través de Hoppin y que este sea un valor fijo.
 
-Al igual que antes, apunta el ID correspondiente a este método de envío.
+Al igual que antes, apunta el ID correspondiente a este método de envío.  
 
 
 #### Paso 4 : Activar método de pago
