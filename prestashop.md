@@ -40,8 +40,13 @@ Para poder usar la API Key, debemos darle los permisos adecuados. Desde la vista
 * **countries: View (GET).** Para obtener el identificador del país.
 * **currencies: View (GET).** Para obtener el identificador de la moneda.
 * **customers: View (GET).** Modify (PUT) y Add (POST). Para crear el cliente en vuestro sistema.
+* **deliveries: View (GET).** Para obtener los gastos de envío.
 * **languages: View (GET).** Para obtener el identificador del idioma.
 * **orders: View (GET) y Add (POST).** Para crear los pedidos en vuestro sistema.  
+* **price_ranges: View (GET).** Para calcular los gastos de envío de los pedidos.
+* **states: View (GET).** Para calcular los gastos de envío de los pedidos.
+* **weight_ranges: View (GET).** Para calcular los gastos de envío de los pedidos.
+* **zones: View (GET).** Para calcular los gastos de envío de los pedidos.
 
 
 #### Paso 3 : Identificadores
