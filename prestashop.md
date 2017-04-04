@@ -33,14 +33,14 @@ Para poder usar la API Key, debemos darle los permisos adecuados. Desde la vista
 
 ![presta-ss-04]({{ site.baseurl }}/images/presta-ss-04.png)
 
-* addresses: View (GET) y Add (POST). Para crear las dirrecciones de los clientes que os llevemos.
-* carriers: View (GET). Para obtener el identificador del transportista que tendremos que usar.
-* carts: View (GET) y Add (POST). Para crear el carrito de compra de cada transacción.
-* countries: View (GET). Para obtener el identificador del país.
-* currencies: View (GET). Para obtener el identificador de la moneda.
-* customers: View (GET). Modify (PUT) y Add (POST). Para crear nuestro cliente en vuestro sistema.
-* languages: View (GET). Para obtener el identificador del idioma.
-* orders: View (GET) y Add (POST). Para crear los pedidos en vuestro sistema.
+* **addresses: View (GET) y Add (POST).** Para crear las dirrecciones de los clientes que os llevemos.
+* **carriers: View (GET).** Para obtener el identificador del transportista que tendremos que usar.
+* **carts: View (GET) y Add (POST).** Para crear el carrito de compra de cada transacción.
+* **countries: View (GET).** Para obtener el identificador del país.
+* **currencies: View (GET).** Para obtener el identificador de la moneda.
+* **customers: View (GET).** Modify (PUT) y Add (POST). Para crear el cliente en vuestro sistema.
+* **languages: View (GET).** Para obtener el identificador del idioma.
+* **orders: View (GET) y Add (POST).** Para crear los pedidos en vuestro sistema.
 
 #### Paso 3 : Identificadores
 
