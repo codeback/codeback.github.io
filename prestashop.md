@@ -39,9 +39,10 @@ Para poder usar la API Key, debemos darle los permisos adecuados. Desde la vista
 * **carts: View (GET) y Add (POST).** Para crear el carrito de compra de cada transacción.
 * **countries: View (GET).** Para obtener el identificador del país.
 * **currencies: View (GET).** Para obtener el identificador de la moneda.
-* **customers: View (GET).** Modify (PUT) y Add (POST). Para crear el cliente en vuestro sistema.
+* **customers: View (GET), Modify (PUT) y Add (POST).** Para crear el cliente en vuestro sistema.
 * **deliveries: View (GET).** Para obtener los gastos de envío.
 * **languages: View (GET).** Para obtener el identificador del idioma.
+* **order_states: View (GET).** Para obtener el estado de los pedidos.
 * **orders: View (GET) y Add (POST).** Para crear los pedidos en vuestro sistema.  
 * **price_ranges: View (GET).** Para calcular los gastos de envío de los pedidos.
 * **states: View (GET).** Para calcular los gastos de envío de los pedidos.
