@@ -54,7 +54,7 @@ Para poder usar la API Key, debemos darle los permisos adecuados. Desde la vista
 
 #### Paso 3 : Envíos
 
-Para poder crear los pedidos, necesitamos que nos facilites el identificador del transportista que debemos usar. Apúntalo para enviárnoslos por correo a info@swipeapp.es.
+Para poder crear los pedidos, necesitamos que nos facilites el identificador del transportista que debemos usar. Apúntalo para enviárnoslos por correo a info@hoppin.es.
 
 Puedes encontrarlo en *Transporte -> Transportistas*
 
