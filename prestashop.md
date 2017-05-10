@@ -8,6 +8,16 @@ title: Prestashop Integration
 
 En esta guía se describen los pasos para integrar tu tienda con **Hoppin**.  
 
+#### Paso 0: Preparar .htaccess
+
+Este es el paso más técnico de la integración, pero es muy sencillo. Simplemente, accede a tu hosting, encuentra el gichero .htaccess y añade estas líneas:
+
+```
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+</IfModule>
+```
 
 #### Paso 1 : Crear API Key
 
