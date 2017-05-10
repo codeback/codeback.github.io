@@ -10,7 +10,7 @@ En esta guía se describen los pasos para integrar tu tienda con **Hoppin**.
 
 #### Paso 0: Preparar .htaccess
 
-Este es el paso más técnico de la integración, pero es muy sencillo. Simplemente, accede a tu hosting, encuentra el gichero .htaccess y añade estas líneas:
+Este es el paso más técnico de la integración, pero es muy sencillo. Simplemente, accede a tu hosting, encuentra el fichero .htaccess y añade estas líneas:
 
 ```
 <IfModule mod_rewrite.c>
@@ -70,7 +70,7 @@ Puedes encontrarlo en *Transporte -> Transportistas*
 
 ![presta-ss-05]({{ site.baseurl }}/images/presta-ss-05.png)
 
-*NOTA*: Necesitamos que escojas aquí los gastos de envío para los pedidos que se hagana a través de Hoppin y que este sea un valor fijo.
+*NOTA*: Necesitamos que escojas aquí los gastos de envío para los pedidos que se hagan a través de Hoppin y que este sea un valor fijo.
 
 Apunta el ID correspondiente a este método de envío.  
 
