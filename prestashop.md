@@ -21,11 +21,13 @@ Desde esa vista, pulsa el *botón +* para crearla:
 
 ![presta-ss-02]({{ site.baseurl }}/images/presta-ss-02.png)
 
+Asegúrate ahora o más adelante de que el botón "Enable Prestashop Webservice" (ver imagen de arriba) en la sección "Configuration" **está activado**.
+
 Ahora pulsa en *'Generate'* para que se genere una nueva API Key
 
 ![presta-ss-03]({{ site.baseurl }}/images/presta-ss-03.png)
 
-Una vez la haya obtenido, *necesitamos que nos la envíes a info@swipeapp.es*  
+Una vez la haya obtenido, *necesitamos que nos la envíes a info@hoppin.es*. 
 
 
 #### Paso 2 : Crear permisos API Key
