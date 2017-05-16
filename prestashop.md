@@ -8,7 +8,6 @@ title: Prestashop Integration
 
 En esta guía se describen los pasos para integrar tu tienda con **Hoppin**.  
 
-<<<<<<< HEAD
 =======
 #### Paso 0: Preparar .htaccess
 
@@ -21,7 +20,6 @@ RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 </IfModule>
 ```
 
->>>>>>> 06a7180358850e4e7d65a26e2052e02d4724e4eb
 #### Paso 1 : Crear API Key
 
 Necesitamos acceso a tu sistema para leer los productos y poder generar automáticamente los pedidos. Por ello, se hace necesaria la creación de una API Key.
@@ -97,11 +95,15 @@ También debes enviarnos las reglas de envío que tengas configuradas en ese tra
   
 #### Paso 4 : Activar método de pago
 
-Por último, y ya que los pagos os los vamos a procesar nosotros, necesitamos usar un método de pago para reflejarlo en los pedidos. El más adecuado es el denominado *BankWire* (transferencia bancaria).
+Por último, y ya que los pagos os los vamos a procesar nosotros, necesitamos usar un método de pago para reflejarlo en los pedidos. Para ello, hemos preparado un sencillo módulo de Prestashop llamado *Hoppin* qu epuedes descargar directamente aquí [1]:{{ site.url }}/res/hoppin.zip
 
-Si te dirijes a *Módulos y Servicios -> Pago*, podrás activarlo (si es que no lo está ya) fácilmente tal y como se muestra en la figura:
+Si te dirijes a *Módulos y Servicios*, pulsando en la opción *Añadir nuevo módulo* ubicado arriba a la derecha (ver imagen), podrás subir el fichero ZIP previamente descargado para su instalación.
 
-![presta-ss-08]({{ site.baseurl }}/images/presta-ss-08.png)
+![presta-ss-extra-01]({{ site.baseurl }}/images/presta-ss-extra-01.png)
+
+Una vez *subido* busca por el nombre de Hoppin en la lista e instálalo.
+
+![presta-ss-extra-02]({{ site.baseurl }}/images/presta-ss-extra-02.png)
 
 Una vez activado, asegúrate de ocultarlo en el *checkout* de los usuarios si no quieres que puedan escoger esta opción al comprar directamente en tu tienda web. Para ello pulsa en las siguientes tres opciones:
 
