@@ -16,7 +16,8 @@ Este es el paso más técnico de la integración, pero es muy sencillo. Simpleme
 <IfModule mod_rewrite.c>
 RewriteEngine on
 RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
-</IfModule>```
+</IfModule>
+```
 
 #### Paso 1 : Crear API Key
 
@@ -44,15 +45,8 @@ Para poder usar la API Key, debemos darle los permisos adecuados. Desde la vista
 
 ![presta-ss-04]({{ site.baseurl }}/images/presta-ss-04.png)
 
-<<<<<<< HEAD
-* addresses: View (GET) y Add (POST)
-* carts: View (GET) y Add (POST)
-* countries: View (GET)
-* customers: View (GET). Modify (PUT) y Add (POST)
-* orders: View (GET) y Add (POST)
-
 #### Paso 3 : Identificadores
-=======
+
 * **addresses: View (GET) y Add (POST).** Para crear las dirrecciones de los clientes que os llevemos.
 * **carriers: View (GET).** Para obtener el identificador del transportista que tendremos que usar.
 * **carts: View (GET) y Add (POST).** Para crear el carrito de compra de cada transacción.
@@ -67,8 +61,6 @@ Para poder usar la API Key, debemos darle los permisos adecuados. Desde la vista
 * **states: View (GET).** Para calcular los gastos de envío de los pedidos.
 * **weight_ranges: View (GET).** Para calcular los gastos de envío de los pedidos.
 * **zones: View (GET).** Para calcular los gastos de envío de los pedidos.
->>>>>>> 06a7180358850e4e7d65a26e2052e02d4724e4eb
-
 
 #### Paso 3 : Envíos
 
