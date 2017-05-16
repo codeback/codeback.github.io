@@ -86,7 +86,7 @@ También debes enviarnos las reglas de envío que tengas configuradas en ese tra
 
 #### Paso 4 : Activar método de pago
 
-Por último, y ya que los pagos os los vamos a procesar nosotros, necesitamos usar un método de pago para reflejarlo en los pedidos. Para ello, hemos preparado un sencillo módulo de Prestashop llamado *Hoppin* qu epuedes descargar directamente aquí [1]:({{ site.baseurl }}/download/hoppin.zip)
+Por último, y ya que los pagos os los vamos a procesar nosotros, necesitamos usar un método de pago para reflejarlo en los pedidos. Para ello, hemos preparado un sencillo módulo de Prestashop llamado *Hoppin* que puedes descargar directamente aquí: [Descargar Módulo]({{ site.url }}/download/hoppin.zip)
 
 Si te dirijes a *Módulos y Servicios*, pulsando en la opción *Añadir nuevo módulo* ubicado arriba a la derecha (ver imagen), podrás subir el fichero ZIP previamente descargado para su instalación.
 
