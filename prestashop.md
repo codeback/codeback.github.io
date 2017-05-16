@@ -8,6 +8,7 @@ title: Prestashop Integration
 
 En esta guía se describen los pasos para integrar tu tienda con **Hoppin**.  
 
+
 #### Paso 0: Preparar .htaccess
 
 Este es el paso más técnico de la integración, pero es muy sencillo. Simplemente, accede a tu hosting, encuentra el fichero .htaccess y añade estas líneas:
@@ -18,6 +19,7 @@ RewriteEngine on
 RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 </IfModule>
 ```
+
 
 #### Paso 1 : Crear API Key
 
@@ -39,11 +41,13 @@ Ahora pulsa en *'Generate'* para que se genere una nueva API Key
 
 Una vez la haya obtenido, *necesitamos que nos la envíes a info@hoppin.es*. 
 
+
 #### Paso 2 : Crear permisos API Key
 
 Para poder usar la API Key, debemos darle los permisos adecuados. Desde la vista de edición de la API Key, selecciona los siguientes permisos
 
 ![presta-ss-04]({{ site.baseurl }}/images/presta-ss-04.png)
+
 
 #### Paso 3 : Identificadores
 
@@ -62,6 +66,7 @@ Para poder usar la API Key, debemos darle los permisos adecuados. Desde la vista
 * **weight_ranges: View (GET).** Para calcular los gastos de envío de los pedidos.
 * **zones: View (GET).** Para calcular los gastos de envío de los pedidos.
 
+
 #### Paso 3 : Envíos
 
 Para poder crear los pedidos, necesitamos que nos facilites el identificador del transportista que debemos usar. Apúntalo para enviárnoslos por correo a info@hoppin.es.
@@ -78,9 +83,10 @@ También debes enviarnos las reglas de envío que tengas configuradas en ese tra
 
 ![presta-ss-06]({{ site.baseurl }}/images/presta-ss-06.png)    
   
+
 #### Paso 4 : Activar método de pago
 
-Por último, y ya que los pagos os los vamos a procesar nosotros, necesitamos usar un método de pago para reflejarlo en los pedidos. Para ello, hemos preparado un sencillo módulo de Prestashop llamado *Hoppin* qu epuedes descargar directamente aquí [1]:{{ site.url }}/res/hoppin.zip
+Por último, y ya que los pagos os los vamos a procesar nosotros, necesitamos usar un método de pago para reflejarlo en los pedidos. Para ello, hemos preparado un sencillo módulo de Prestashop llamado *Hoppin* qu epuedes descargar directamente aquí [1]:({{ site.baseurl }}/download/hoppin.zip)
 
 Si te dirijes a *Módulos y Servicios*, pulsando en la opción *Añadir nuevo módulo* ubicado arriba a la derecha (ver imagen), podrás subir el fichero ZIP previamente descargado para su instalación.
 
