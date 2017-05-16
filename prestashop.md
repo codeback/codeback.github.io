@@ -6,8 +6,22 @@ title: Prestashop Integration
 # Integración con tiendas Prestashop 1.6.x
 ### Compromiso Hoppin: ¡Integración en menos de 30 minutos! :alarm_clock:
 
-En esta guía se describen los pasos para integrar tu tienda con **Hoppin**.
+En esta guía se describen los pasos para integrar tu tienda con **Hoppin**.  
 
+<<<<<<< HEAD
+=======
+#### Paso 0: Preparar .htaccess
+
+Este es el paso más técnico de la integración, pero es muy sencillo. Simplemente, accede a tu hosting, encuentra el fichero .htaccess y añade estas líneas:
+
+```
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+</IfModule>
+```
+
+>>>>>>> 06a7180358850e4e7d65a26e2052e02d4724e4eb
 #### Paso 1 : Crear API Key
 
 Necesitamos acceso a tu sistema para leer los productos y poder generar automáticamente los pedidos. Por ello, se hace necesaria la creación de una API Key.
@@ -20,11 +34,14 @@ Desde esa vista, pulsa el *botón +* para crearla:
 
 ![presta-ss-02]({{ site.baseurl }}/images/presta-ss-02.png)
 
-Ahora clicka en *'Generate'* para que se genere una nueva API Key
+Asegúrate ahora o más adelante de que el botón "Enable Prestashop Webservice" (ver imagen de arriba) en la sección "Configuration" **está activado**.
+
+Ahora pulsa en *'Generate'* para que se genere una nueva API Key
 
 ![presta-ss-03]({{ site.baseurl }}/images/presta-ss-03.png)
 
-Una vez la haya obtenido, *necesitamos que nos la envíes a info@swipeapp.es*
+Una vez la haya obtenido, *necesitamos que nos la envíes a info@hoppin.es*. 
+
 
 
 
@@ -34,6 +51,7 @@ Para poder usar la API Key, debemos darle los permisos adecuados. Desde la vista
 
 ![presta-ss-04]({{ site.baseurl }}/images/presta-ss-04.png)
 
+<<<<<<< HEAD
 * addresses: View (GET) y Add (POST)
 * carts: View (GET) y Add (POST)
 * countries: View (GET)
@@ -43,37 +61,40 @@ Para poder usar la API Key, debemos darle los permisos adecuados. Desde la vista
 
 
 #### Paso 3 : Identificadores
+=======
+* **addresses: View (GET) y Add (POST).** Para crear las dirrecciones de los clientes que os llevemos.
+* **carriers: View (GET).** Para obtener el identificador del transportista que tendremos que usar.
+* **carts: View (GET) y Add (POST).** Para crear el carrito de compra de cada transacción.
+* **countries: View (GET).** Para obtener el identificador del país.
+* **currencies: View (GET).** Para obtener el identificador de la moneda.
+* **customers: View (GET), Modify (PUT) y Add (POST).** Para crear el cliente en vuestro sistema.
+* **deliveries: View (GET).** Para obtener los gastos de envío.
+* **languages: View (GET).** Para obtener el identificador del idioma.
+* **order_states: View (GET).** Para obtener el estado de los pedidos.
+* **orders: View (GET) y Add (POST).** Para crear los pedidos en vuestro sistema.  
+* **price_ranges: View (GET).** Para calcular los gastos de envío de los pedidos.
+* **states: View (GET).** Para calcular los gastos de envío de los pedidos.
+* **weight_ranges: View (GET).** Para calcular los gastos de envío de los pedidos.
+* **zones: View (GET).** Para calcular los gastos de envío de los pedidos.
+>>>>>>> 06a7180358850e4e7d65a26e2052e02d4724e4eb
 
-Para poder crear los pedidos, necesitamos que nos facilites algunos indicadores de tu tienda. Apúntaloa para enviárnoslos por correo a info@swipeapp.es.
 
-* CountryID (Código para España)
+#### Paso 3 : Envíos
 
-Puedes encontrar este ID pulsando en el menú lateral en *Localización -> Países*
+Para poder crear los pedidos, necesitamos que nos facilites el identificador del transportista que debemos usar. Apúntalo para enviárnoslos por correo a info@hoppin.es.
 
-Una vez lo tengas identificado, apúntalo el que corresponda a España.
+Puedes encontrarlo en *Transporte -> Transportistas*
 
 ![presta-ss-05]({{ site.baseurl }}/images/presta-ss-05.png)
 
-* LangID
+*NOTA*: Necesitamos que escojas aquí los gastos de envío para los pedidos que se hagan a través de Hoppin y que este sea un valor fijo.
 
-Puedes encontrar este ID pulsando en el menú lateral en *Localización -> Idiomas*
+Apunta el ID correspondiente a este método de envío.  
 
-Una vez lo tengas identificado, apunta el que corresponda al idioma Español.
+También debes enviarnos las reglas de envío que tengas configuradas en ese transportista.
 
-![presta-ss-06]({{ site.baseurl }}/images/presta-ss-06.png)
-
-* CarrierID
-
-De forma similar a los IDs anteriores, puedes encontrar este otro en *Transporte -> Transportistas*
-
-![presta-ss-07]({{ site.baseurl }}/images/presta-ss-07.png)
-
-*NOTA*: Necesitamos que escojas aquí los gastos de envío para los pedidos que se hagana a través de Hoppin y que este sea un valor fijo.
-
-Al igual que antes, apunta el ID correspondiente a este método de envío.
-
-
-
+![presta-ss-06]({{ site.baseurl }}/images/presta-ss-06.png)    
+  
 #### Paso 4 : Activar método de pago
 
 Por último, y ya que los pagos os los vamos a procesar nosotros, necesitamos usar un método de pago para reflejarlo en los pedidos. El más adecuado es el denominado *BankWire* (transferencia bancaria).
@@ -82,12 +103,12 @@ Si te dirijes a *Módulos y Servicios -> Pago*, podrás activarlo (si es que no 
 
 ![presta-ss-08]({{ site.baseurl }}/images/presta-ss-08.png)
 
-Una vez activado, asegúrate de ocultarlo en el *checkout* de los usuarios si no quieres que puedan escoger esta opción al comprar directamente en tu tienda. Para ello clicka en las siguientes tres opciones:
+Una vez activado, asegúrate de ocultarlo en el *checkout* de los usuarios si no quieres que puedan escoger esta opción al comprar directamente en tu tienda web. Para ello pulsa en las siguientes tres opciones:
 
 * Disable on mobiles
 * Disable on tablets
 * Disable on computers
 
-![presta-ss-07]({{ site.baseurl }}/images/presta-ss-07.png)
+![presta-ss-09]({{ site.baseurl }}/images/presta-ss-09.png)
 
 
