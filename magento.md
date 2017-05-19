@@ -43,14 +43,14 @@ Pulsa en *System->Web Services->SOAP/XML-RPC - Roles*.
 
 Crea un nuevo Rol con el nombre *Hoppin-role*.
 
-![magento-ss-04]({{ site.baseurl }}/images/magento-ss-04.png)
+![magento-ss-03]({{ site.baseurl }}/images/magento-ss-03.png)
 
 Desde *Role Resources*, selecciona acceso *Custom* (o *Personalizado*) y en el árbol de recursos, activa los siguientes permisos:
 
 * Shopping Cart
 * Directory
 
-![magento-ss-03]({{ site.baseurl }}/images/magento-ss-03.png)
+![magento-ss-04]({{ site.baseurl }}/images/magento-ss-04.png)
 
 Recuerda guardar los cambios.
 
