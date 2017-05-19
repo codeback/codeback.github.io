@@ -16,6 +16,7 @@ Descarga el módulo aquí: [Descargar Módulo]({{ site.url }}/download/hoppin-ma
 Sube el módulo al directorio raíz de tu instalación de Magento y descomprímelo respetando la estructura de carpetas que éste tiene. Este módulo creará un nuevo método de pago (llamado HOPPIN) y hará que no se muestre en el *checkout* a los usuarios que compren de modo convencional en la web de la tienda.
 
 
+
 #### Paso 2: Medida de precaución (Just in case)
 
 * Crea una copia de seguridad desde *System->Tools->Backup*
@@ -25,11 +26,13 @@ Sube el módulo al directorio raíz de tu instalación de Magento y descompríme
 Ahora, sal de la sesión de administrador de Magento y accede de nuevo.
 
 
+
 #### Paso 3: Configurar el módulo
 
-Dirígete a *System->Configuration->Payment Methods*, encuentra el nuevo método de pago HOPPIN y seleccionar el **New order status** que desees para los pedios que se generen desde HOPPIN.
+Dirígete a *System->Configuration->Payment Methods*, encuentra el nuevo método de pago HOPPIN y seleccionar el **New order status** que desees para los pedidos que se generen desde HOPPIN.
 
 ![magento-ss-01]({{ site.baseurl }}/images/magento-ss-01.png)
+
 
 
 #### Paso 4: Configurar el acceso a través de la API: Crear un Rol de usuario con los permisos adecuados
@@ -51,6 +54,7 @@ Desde *Role Resources*, selecciona acceso *Custom* (o *Personalizado*) y en el �
 
 Recuerda guardar los cambios.
 
+
 #### Paso 5: Configurar el acceso a través de la API: Crear API Key
 
 Para este paso, será necesario crear un API key para el acceso de HOPPIN, que nos tendrás que mandar posteriormente. El valor de esta API key debe ser aleatorio, único y privado. 
@@ -65,6 +69,7 @@ Un posible método para generarlo es hacerlo a través de la página https://pas
 Después, pulsa el botón *Crear contraseña* y copia el valor generado, lo necesitarás en el siguiente paso.
 
 ![magento-ss-07]({{ site.baseurl }}/images/magento-ss-07.png)
+
 
 
 #### Paso 6: Configurar el acceso a través de la API: Crear Usuario
@@ -94,6 +99,7 @@ HOPPIN necesita saber las reglas de envío que debe aplicar para el pedido. Por 
 Por ejemplo, si usáis el método de envío *Table Rates*, debéis enviarnos el archivo CSV que contiene las reglas de envío. este archivo puede exportarse desde *System->Configuration->Sales->Shipping Methods*.
 
 ![magento-ss-08]({{ site.baseurl }}/images/magento-ss-08.png)
+
 
 #### Paso 8 : Último paso
 
