@@ -16,18 +16,7 @@ Descarga el módulo aquí: [Descargar Módulo]({{ site.url }}/download/hoppin-ma
 Sube el módulo al directorio raíz de tu instalación de Magento y descomprímelo respetando la estructura de carpetas que éste tiene. Este módulo creará un nuevo método de pago (llamado HOPPIN) y hará que no se muestre en el *checkout* a los usuarios que compren de modo convencional en la web de la tienda.
 
 
-
-#### Paso 2: Medida de precaución (Just in case)
-
-* Crea una copia de seguridad desde *System->Tools->Backup*
-* Deshabilita las compilaciones en *System->Tools->Compilations*
-* Limpia la caché en *System -> Cache Management*
-
-Ahora, sal de la sesión de administrador de Magento y accede de nuevo.
-
-
-
-#### Paso 3: Configurar el módulo
+#### Paso 2: Configurar el módulo
 
 Dirígete a *System->Configuration->Payment Methods*, encuentra el nuevo método de pago HOPPIN y seleccionar el **New order status** que desees para los pedidos que se generen desde HOPPIN.
 
@@ -35,7 +24,7 @@ Dirígete a *System->Configuration->Payment Methods*, encuentra el nuevo método
 
 
 
-#### Paso 4: Configurar el acceso a través de la API: Crear un Rol de usuario con los permisos adecuados
+#### Paso 3: Configurar el acceso a través de la API: Crear un Rol de usuario con los permisos adecuados
 
 Pulsa en *System->Web Services->SOAP/XML-RPC - Roles*.
 
@@ -55,7 +44,7 @@ Desde *Role Resources*, selecciona acceso *Custom* (o *Personalizado*) y en el �
 Recuerda guardar los cambios.
 
 
-#### Paso 5: Configurar el acceso a través de la API: Crear API Key
+#### Paso 4: Configurar el acceso a través de la API: Crear API Key
 
 Para este paso, será necesario crear un API key para el acceso de HOPPIN, que nos tendrás que mandar posteriormente. El valor de esta API key debe ser aleatorio, único y privado. 
 
@@ -72,7 +61,7 @@ Después, pulsa el botón *Crear contraseña* y copia el valor generado, lo nece
 
 
 
-#### Paso 6: Configurar el acceso a través de la API: Crear Usuario
+#### Paso 5: Configurar el acceso a través de la API: Crear Usuario
 
 Pulsa en *System->Web Services->SOAP/XML-RPC - Users* y y crea un nuevo usuario la siguiente información:
 
@@ -92,7 +81,7 @@ Ahora, asigna el Rol creado anteriormente a este usuario y guarda los cambios.
 ![magento-ss-06]({{ site.baseurl }}/images/magento-ss-06.png)
 
 
-#### Paso 7 : Método de envío
+#### Paso 6: Método de envío
 
 HOPPIN necesita saber las reglas de envío que debe aplicar para el pedido. Por ello, es necesario que nos mandes tanto el método de envío que utilicéis, como las reglas asociadas al método (si las hubiese). 
 
@@ -101,7 +90,7 @@ Por ejemplo, si usáis el método de envío *Table Rates*, debéis enviarnos el 
 ![magento-ss-08]({{ site.baseurl }}/images/magento-ss-08.png)
 
 
-#### Paso 8 : Último paso
+#### Paso 7: Último paso
 
 A continuación resumimos la información que debes hacernos llegar:
 
